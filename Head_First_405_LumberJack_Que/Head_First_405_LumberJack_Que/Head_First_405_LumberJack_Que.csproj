@@ -76,9 +76,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainStyleSheet.css" />
+    <Content Include="PrimaryWebForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrimaryWebForm.aspx.cs">
+      <DependentUpon>PrimaryWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrimaryWebForm.aspx.designer.cs">
+      <DependentUpon>PrimaryWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
